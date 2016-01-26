@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-
-
   get 'hello-world' => 'hello_world#index'
+  
+  get 'comments' => 'hello_world#comments'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
