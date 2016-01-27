@@ -92,6 +92,8 @@ Create helloword.js file.
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
 
+## Create Component	
+
 	<h1>Bucky - Component</h1>
 
 	<div id="content"></div>
@@ -110,6 +112,57 @@ Create helloword.js file.
 		);
 	</script>
 
+## Create Multiple Component
 
-Another [link!](https://github.com/vanbumi/CodeJournal/blob/master/react/Notes.md)
+	<h2>Multiple Element</h2>
+
+	<div id="content2"></div>
+
+	<script type="text/babel" >
+		var DyoComponent = React.createClass({
+			render: function() {
+				return(
+					<h3>My Name is Brandon</h3>
+				);
+			}
+		});
+		ReactDOM.render(
+			<div>
+				< DyoComponent />
+				< DyoComponent />
+				< DyoComponent />
+				< DyoComponent />
+			</div>,	
+			document.getElementById('content2')
+		);
+	</script>
+
+## How to use property
+
+	<h2>Multiple Element and how to use properties and attributs</h2>
+
+	<div id="content2"></div>
+
+	<script type="text/babel" >
+		var DyoComponent = React.createClass({
+			render: function() {
+				return(
+					<h3>My Name is {this.props.user} and I like to eat {this.props.food} </h3>
+				);
+			}
+		});
+		ReactDOM.render(
+			<div>
+				< DyoComponent user="Brandon" food="Steak" />
+				< DyoComponent user="Ersya" food="Sushi" />
+				< DyoComponent user="Dyo" food="Pasta" />
+				< DyoComponent user="Nancy" food="Burger" />
+			</div>,	
+			document.getElementById('content2')
+		);
+	</script>
+
+next tut Children 4th video
+
+Try another [link!](https://github.com/vanbumi/CodeJournal/blob/master/react/Notes.md)
 

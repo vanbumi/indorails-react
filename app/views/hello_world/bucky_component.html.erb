@@ -6,12 +6,35 @@
 	var BuckysComponent = React.createClass({
 		render: function() {
 			return(
-					<h2>My Name is Dyo</h2>
+					<h3>My Name is Dyo</h3>
 				);
 		}
 	});
 	ReactDOM.render(
 		<BuckysComponent />,
 		document.getElementById("content")
+	);
+</script>
+
+<h2>Multiple Element</h2>
+
+<div id="content2"></div>
+
+<script type="text/babel" >
+	var DyoComponent = React.createClass({
+		render: function() {
+			return(
+				<h3>My Name is {this.props.user} and I like to eat {this.props.food} </h3>
+			);
+		}
+	});
+	ReactDOM.render(
+		<div>
+			< DyoComponent user="Brandon" food="Steak" />
+			< DyoComponent user="Ersya" food="Sushi" />
+			< DyoComponent user="Dyo" food="Pasta" />
+			< DyoComponent user="Nancy" food="Burger" />
+		</div>,	
+		document.getElementById('content2')
 	);
 </script>
