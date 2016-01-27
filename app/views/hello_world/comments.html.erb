@@ -2,3 +2,18 @@
 
 <h2>Form Comments</h2>
 
+<script >
+var CommentBox = React.createClass({
+    render: function() {
+        return (
+                <div className="commentBox">
+                    Hello, world! This a CommentBox.
+                </div>  
+            );
+    }   
+}); 
+ReactDOM.render(
+    <CommentBox />,
+    document.getElementById('content')
+);
+</script>

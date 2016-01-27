@@ -6,4 +6,8 @@ class HelloWorldController < ApplicationController
   	
   end
 
+  def bucky_component
+  	
+  end
+
 end
