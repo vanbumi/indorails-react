@@ -111,4 +111,5 @@ Create helloword.js file.
 	</script>
 
 
+Another [link!](https://github.com/vanbumi/CodeJournal/blob/master/react/Notes.md)
 
