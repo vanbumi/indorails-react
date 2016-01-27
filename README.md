@@ -1,6 +1,6 @@
 # IndoRails - React
 
-### Hello World
+## Hello World
 
     <!DOCTYPE html>
     <html>
@@ -32,3 +32,5 @@ Create helloword.js file.
     ); 
 
     <script type="text/babel" src="src/helloworld.js"></script>
+
+## Comments
