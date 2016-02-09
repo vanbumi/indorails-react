@@ -192,5 +192,5 @@ Create helloword.js file.
 		
 	</script>
 
-Try another [link!](https://github.com/vanbumi/CodeJournal/blob/master/react/Notes.md)
+My another React in my CodeJournal [link!](https://github.com/vanbumi/CodeJournal/blob/master/react/getting-start.md)
 
