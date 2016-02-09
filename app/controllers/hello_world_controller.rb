@@ -10,4 +10,8 @@ class HelloWorldController < ApplicationController
   	
   end
 
+  def children
+  	
+  end
+
 end
