@@ -192,5 +192,38 @@ Create helloword.js file.
 		
 	</script>
 
-My another React in my CodeJournal [link!](https://github.com/vanbumi/CodeJournal/blob/master/react/getting-start.md)
+## React Event
+
+	<h1>React Event</h1>
+
+	<div id="content"></div>
+
+	<script type="text/babel">
+		
+		var MedioComponent = React.createClass({
+			doSomething: function(){
+				alert('The ' + this.props.children);
+			},
+
+			render: function(){
+				return(
+					<div>
+						<h3>{this.props.user}</h3>
+						<p>{this.props.children}</p>
+						<a onClick={this.doSomething} href="#">Click here</a>
+					</div>	
+				);
+			} 
+		});
+		ReactDOM.render(
+			<div>	
+				< MedioComponent user="MedioSoft">Corporate Web Development</ MedioComponent >
+			</div>,	
+			document.getElementById('content')
+		);
+
+	</script>
+	 	
+
+Another React in my [CodeJournal!](https://github.com/vanbumi/CodeJournal/blob/master/react/getting-start.md)
 

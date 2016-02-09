@@ -14,4 +14,8 @@ class HelloWorldController < ApplicationController
   	
   end
 
+  def event
+  	
+  end
+
 end
