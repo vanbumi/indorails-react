@@ -164,7 +164,33 @@ Create helloword.js file.
 
 ## Children
 
+	<h1>Children</h1>
 
+	<div id="content"></div>
+
+	<script type="text/babel">
+
+		var DyosComponent = React.createClass({
+			render: function() {
+				return(
+					# always under div tag
+					<div>	
+						<h3>{this.props.user}</h3>
+						<p>{this.props.children}</p>
+					</div>	
+				);
+			}
+		});
+		ReactDOM.render(
+			# create closed tab
+			# always under div tag
+			<div>
+				< DyosComponent user="DyoMedio" >How do you get my name?</DyosComponent> 
+				< DyosComponent user="Brandon" >He is an awesome kid</DyosComponent>
+			</div>,
+			document.getElementById('content'));
+		
+	</script>
 
 Try another [link!](https://github.com/vanbumi/CodeJournal/blob/master/react/Notes.md)
 
